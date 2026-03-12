@@ -156,7 +156,7 @@ INSERT INTO solution VALUES (1, 'Miranda Priestly');
 SELECT value FROM solution;
 ```
 **Evidencia**
-![Solucion Asesinato](evidencia/10_SolucionFinal.png)
+![Solucion Asesinato](evidencia/10_SoluciónFinal.png)
 
 ## Conclusion
 Se confirma que el cerebro detrás de este asesinato es Miranda Priestly y se cierra el caso. 
