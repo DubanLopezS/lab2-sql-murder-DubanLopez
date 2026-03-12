@@ -23,7 +23,7 @@ WHERE city LIKE "%SQL City%" AND date = 20180115
 ![Nos centramos en el segundo testigo ya que teniamos información de esa persona](evidencia/1_ReporteAsesinato.png)
 
 > **Conclusión**
-> Se buscaron los crimenes relacionados con la fecha y ciudad, y al momento de centrarme en el asesinato puedo observar que tenemos dos testigos.
+> Se buscaron los crímenes relacionados con la fecha y ciudad, y al momento de centrarme en el asesinato puedo observar que tenemos dos testigos.
 
 
 ### Query 2
@@ -32,7 +32,7 @@ SELECT * FROM person
 WHERE name LIKE "%Annabel%" and address_street_name LIKE "%Franklin%"
 ```
 **Evidencia**
-![Encontré información personal de este testigo](evidencia/2_InfTestigo.png)
+![Encontré información personal de este testigo](evidencia/2_InfoTestigo.png)
 
 ## Conclusion
 Encontré información personal de este testigo con la cual se pudo seguir avanzando en la investigación.
@@ -47,7 +47,7 @@ WHERE person_id = 16371
 ![Entrevista del testigo con información sobre el autor del asesinato](evidencia/3_EntrevistaTestigo.png)
 
 ## Conclusion
- Se llego a una entrevista en la cual se descubrio que la testigo reconocio a el asesino en el gimnasio el pasado 9 de enero de 2018.
+ Se llego a una entrevista en la cual se descubrió que la testigo reconoció a el asesino en el gimnasio el pasado 9 de enero de 2018.
 
 
  ### Query 4
@@ -70,10 +70,10 @@ ON get_fit_now_member.id = get_fit_now_check_in.membership_id
 WHERE get_fit_now_check_in.check_in_date = 20180109;
 ```
 **Evidencia**
-![Información de las personas en el GYM](evidencia/MasInfGym.png)
+![Información de las personas en el GYM](evidencia/5_MasInfGym.png)
 
 ## Conclusion
-Se halló información de las personas que estuvieron ese dia en el gimnasio, teniendo en cuenta cosas como el ID, el nombre, y la hora de entrada y de salida.
+Se halló información de las personas que estuvieron ese día en el gimnasio, teniendo en cuenta cosas como el ID, el nombre, y la hora de entrada y de salida.
 
 
  ### Query 6
@@ -89,7 +89,7 @@ LIMIT 3;
 ![Ultimas personas en el GYM](evidencia/5.2.png)
 
 ## Conclusion
-Gracias a la hora de entrada y de salida (Las personas que estuvieron mas tarde en el gimnasio), se pudo observar que la señora Annabel (Testigo) solo se cruzo con las ultimas 3 personas que fueron al gimnasio ese día.
+Gracias a la hora de entrada y de salida (Las personas que estuvieron más tarde en el gimnasio), se pudo observar que la señora Annabel (Testigo) solo se cruzó con las ultimas 3 personas que fueron al gimnasio ese día.
 
 
  ### Query 7
@@ -98,10 +98,10 @@ SELECT * FROM interview
 WHERE person_id = 67318
 ```
 **Evidencia**
-![Información de las personas en el GYM](evidencia/EntrevistaSospechoso.png)
+![Información de las personas en el GYM](evidencia/6_EntrevistaSospechoso.png)
 
 ## Conclusion
-Se consulto las entrevistas de ambas personas, y encontré que el principal sospechoso es la persona con id: 67318, gracias a que el lo revela y tambien teniendo en cuenta que la otra persona no contaba con entrevista.
+Se consulto las entrevistas de ambas personas, y encontré que el principal sospechoso es la persona con id: 67318, gracias a que él lo revela y también teniendo en cuenta que la otra persona no contaba con entrevista.
 
 
  ### Query 8
@@ -110,7 +110,7 @@ SELECT * FROM person
 WHERE id = 67318
 ```
 **Evidencia**
-![Información sospechoso](evidencia/InfSospechoso.png)
+![Información sospechoso](evidencia/7_InfSospechoso.png)
 
 ## Conclusion
 Se consulto la información de la persona sospechosa.
@@ -122,7 +122,7 @@ INSERT INTO solution VALUES (1, 'Jeremy Bowers');
 SELECT value FROM solution;
 ```
 **Evidencia**
-![Nombre Asesino](evidencia/SolucionAsesino.png)
+![Nombre Asesino](evidencia/8_SolucionAsesino.png)
 
 ## Conclusion
 Descubrí que el asesinato lo realizó Jeremy Bowers.
@@ -144,10 +144,10 @@ AND f.event_name = "SQL Symphony Concert"
 AND f.date BETWEEN 20171201 AND 20171231;
 ```
 **Evidencia**
-![Nombre Cerebro Asesinato](evidencia/NombreSospechosa.png)
+![Nombre Cerebro Asesinato](evidencia/9_NombreSospechosa.png)
 
 ## Conclusion
-Gracias a toda la información que habia suministrado Jeremy Bowers en la entrevista, se encuentra que el nombre de la sospechosa que ordenó el asesinato es Miranda Priestly.
+Gracias a toda la información que había suministrado Jeremy Bowers en la entrevista, se encuentra que el nombre de la sospechosa que ordenó el asesinato es Miranda Priestly.
 
 
  ### Query 11
@@ -156,7 +156,7 @@ INSERT INTO solution VALUES (1, 'Miranda Priestly');
 SELECT value FROM solution;
 ```
 **Evidencia**
-![Solucion Asesinato](evidencia/SolucionFinal.png)
+![Solucion Asesinato](evidencia/10_SolucionFinal.png)
 
 ## Conclusion
 Se confirma que el cerebro detrás de este asesinato es Miranda Priestly y se cierra el caso. 
